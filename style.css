@@ -6,6 +6,6 @@ button {
   outline: none!important;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: none!important;
+btn {
+    box-shadow: none;
 }
