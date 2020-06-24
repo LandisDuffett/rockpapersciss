@@ -6,6 +6,6 @@ button {
   outline: none!important;
 }
 
-btn {
+.buttonrow {
     box-shadow: none;
 }
