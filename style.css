@@ -2,10 +2,3 @@
   justify-content: space-evenly;
 }
 
-button {
-  outline: none!important;
-}
-
-.buttonrow {
-    box-shadow: none;
-}
