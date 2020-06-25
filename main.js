@@ -7,7 +7,7 @@ function play(playerChoice) {
   let compChoice = getCompChoice();
   debugger
   if (playerChoice == compChoice) {
-    alert("Tie! Choose again.");
+    alert(`Computer also chooses ${compChoice} - Tie! Choose again.`);
     tieTally++;
   }
   else if (playerChoice == 'rock') {
@@ -69,7 +69,7 @@ function play(playerChoice) {
       alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     } else if (compChoice == 'scissors') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You Win!`);
       playerTally++;
     }
     else if (compChoice == 'lizard') {
@@ -77,25 +77,25 @@ function play(playerChoice) {
       compTally++;
     }
     else if (compChoice == 'rock') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You Win!`);
       playerTally++;
     }
   }
 
   else if (playerChoice == 'lizard') {
     if (compChoice == 'paper') {
-      alert(`Computer chooses ${compChoice} - Computer Wins!`);
-      compTally++;
+      alert(`Computer chooses ${compChoice} - You Win!`);
+      playerTally++;
     } else if (compChoice == 'scissors') {
       alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'rock') {
-      alert("You win!");
-      playerTally++;
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
+      compTally++;
     }
     else if (compChoice == 'Spock') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You Win!`);
       playerTally++;
     }
   }
