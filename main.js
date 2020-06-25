@@ -5,7 +5,6 @@ let tieTally = 0;
 
 function play(playerChoice) {
   let compChoice = getCompChoice();
-  debugger
   if (playerChoice == compChoice) {
     alert(`Computer also chooses ${compChoice} - Tie! Choose again.`);
     tieTally++;
