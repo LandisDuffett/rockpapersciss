@@ -104,7 +104,7 @@ function play(playerChoice) {
 
 function getCompChoice() {
   let num = Math.floor(Math.random() * choices.length);
-  let choice = choices[num];
+  let choice = choices[num + 1];
   return choice;
 }
 
