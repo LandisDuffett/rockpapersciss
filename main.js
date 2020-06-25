@@ -12,68 +12,68 @@ function play(playerChoice) {
   }
   else if (playerChoice == 'rock') {
     if (compChoice == 'paper') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     } else if (compChoice == 'scissors') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     }
     else if (compChoice == 'lizard') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     }
     else if (compChoice == 'Spock') {
-      alert("Computer wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
   }
 
   else if (playerChoice == 'scissors') {
     if (compChoice == 'paper') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     } else if (compChoice == 'rock') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'lizard') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     }
     else if (compChoice == 'Spock') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
   }
 
   else if (playerChoice == 'paper') {
     if (compChoice == 'rock') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     } else if (compChoice == 'scissors') {
-      alert("Computer wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'lizard') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'Spock') {
-      alert("You win!");
+      alert(`Computer chooses ${compChoice} - You win!`);
       playerTally++;
     }
   }
 
   else if (playerChoice == 'Spock') {
     if (compChoice == 'paper') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     } else if (compChoice == 'scissors') {
       alert("You win!");
       playerTally++;
     }
     else if (compChoice == 'lizard') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'rock') {
@@ -84,10 +84,10 @@ function play(playerChoice) {
 
   else if (playerChoice == 'lizard') {
     if (compChoice == 'paper') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     } else if (compChoice == 'scissors') {
-      alert("Computer Wins!");
+      alert(`Computer chooses ${compChoice} - Computer Wins!`);
       compTally++;
     }
     else if (compChoice == 'rock') {
