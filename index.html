@@ -63,6 +63,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"
+    integrity="sha256-sfG8c9ILUB8EXQ5muswfjZsKICbRIJUG/kBogvvV5sY=" crossorigin="anonymous"></script>
+  <!-- bootbox code -->
+  <script src="bootbox.min.js"></script>
+  <script src="bootbox.locales.min.js"></script>
+  <script>
+    $(document).on("click", ".show-alert", function (e) {
+      bootbox.alert("Hello world!", function () {
+        console.log("Alert Callback");
+      });
+    });
+  </script>
 
   <script src="main.js"></script>
 </body>
