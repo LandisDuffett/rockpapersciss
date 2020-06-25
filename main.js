@@ -1,12 +1,14 @@
-let choices = ['rock', 'paper', 'scissors']
+let choices = ['rock', 'paper', 'scissors', 'lizard', 'Spock']
 let playerTally = 0;
 let compTally = 0;
+let tieTally = 0;
 
 function play(playerChoice) {
   let compChoice = getCompChoice();
   debugger
   if (playerChoice == compChoice) {
     alert("Tie! Choose again.");
+    tieTally++;
   }
   else if (playerChoice == 'rock') {
     if (compChoice == 'paper') {
@@ -16,7 +18,16 @@ function play(playerChoice) {
       alert("You win!");
       playerTally++;
     }
+    else if (compChoice == 'lizard') {
+      alert("You win!");
+      playerTally++;
+    }
+    else if (compChoice == 'Spock') {
+      alert("Computer wins!");
+      compTally++;
+    }
   }
+
   else if (playerChoice == 'scissors') {
     if (compChoice == 'paper') {
       alert("You win!");
@@ -25,7 +36,16 @@ function play(playerChoice) {
       alert("Computer Wins!");
       compTally++;
     }
+    else if (compChoice == 'lizard') {
+      alert("You win!");
+      playerTally++;
+    }
+    else if (compChoice == 'Spock') {
+      alert("Computer Wins!");
+      compTally++;
+    }
   }
+
   else if (playerChoice == 'paper') {
     if (compChoice == 'rock') {
       alert("You win!");
@@ -34,8 +54,52 @@ function play(playerChoice) {
       alert("Computer wins!");
       compTally++;
     }
-
+    else if (compChoice == 'lizard') {
+      alert("Computer Wins!");
+      compTally++;
+    }
+    else if (compChoice == 'Spock') {
+      alert("You win!");
+      playerTally++;
+    }
   }
+
+  else if (playerChoice == 'Spock') {
+    if (compChoice == 'paper') {
+      alert("Computer Wins!");
+      compTally++;
+    } else if (compChoice == 'scissors') {
+      alert("You win!");
+      playerTally++;
+    }
+    else if (compChoice == 'lizard') {
+      alert("Computer Wins!");
+      compTally++;
+    }
+    else if (compChoice == 'rock') {
+      alert("You win!");
+      playerTally++;
+    }
+  }
+
+  else if (playerChoice == 'lizard') {
+    if (compChoice == 'paper') {
+      alert("Computer Wins!");
+      compTally++;
+    } else if (compChoice == 'scissors') {
+      alert("Computer Wins!");
+      compTally++;
+    }
+    else if (compChoice == 'rock') {
+      alert("You win!");
+      playerTally++;
+    }
+    else if (compChoice == 'Spock') {
+      alert("You win!");
+      playerTally++;
+    }
+  }
+  drawScoreboard();
 }
 
 function getCompChoice() {
@@ -46,18 +110,14 @@ function getCompChoice() {
 
 function drawScoreboard() {
   let template = "";
-  template += `
-         <div class="d-flex space-between">
-            <span>You:
-                ${playerTally}
-            </span>
-            <span>Computer: ${compTally}</span>
-        </div>
+  template += `<row class="m-2"><h4 class="text-center">
+            <span class="mr-3">You:
+                ${playerTally}</span>
+            <span class="ml-3">Computer: ${compTally}</span></h4><h4 class="text-center">
+            Ties:
+                ${tieTally}</h4></row>
         `
+  document.getElementById("tally").innerHTML = template
 }
-
-document.getElementById("tally").innerHTML = template
-}
-
 
 drawScoreboard()

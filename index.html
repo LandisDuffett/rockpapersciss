@@ -14,24 +14,38 @@
 </head>
 
 <body class="justify-content-center">
-  <div class="col-4 mx-auto">
+  <nav class="navbar navbar-light bg-primary text-center d-flex justify-content-center">
+    <div class="navbar-brand mb-0 h1" style="font-family:'Courier New', Courier, monospace; font-size: 2rem;">GameDay
+    </div>
+  </nav>
+  <div class="col-12 col-md-4 m-auto">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title text-center">Rock, Paper, Scissors</h3>
-        <h5>Match your skills against the computer. Click on the button corresponding to your choice and see who wins.
+        <h3 class="panel-title text-center">Rock, Paper, Scissors, Lizard, Spock</h3>
+        <h5 class="px-2 mx-2">Match your skills against the computer. Click on the button corresponding to your choice
+          and
+          see who wins.
           Remember:</h5>
         <ul style="list-style-type:disc">
-          <li>Rock beats Scissors</li1>
-          <li>Scissors beats Paper</li2>
-          <li>Paper beats Rock</li3>
+          <li>Rock beats Scissors</li>
+          <li>Rock smashes Lizard</li>
+          <li>Paper covers Rock</li>
+          <li>Paper disproves Spock</li>
+          <li>Scissors decapitates Lizard</li>
+          <li>Scissors cuts Paper</li>
+          <li>Lizard poisons Spock</li>
+          <li>Lizard eats Paper</li>
+          <li>Spock vaporizes Rock</li>
+          <li>Spock smashes Scissors</li>
         </ul>
-
       </div>
       <div class="panel-body">
         <div class="row mx-auto buttonrow">
           <button class="btn btn-primary" onclick="play('rock')">Rock</button>
           <button class="btn btn-primary" onclick="play('paper')">Paper</button>
           <button class="btn btn-primary" onclick="play('rock')">Scissors</button>
+          <button class="btn btn-primary" onclick="play('rock')">Lizard</button>
+          <button class="btn btn-primary" onclick="play('rock')">Spock</button>
         </div>
       </div>
       <div id="tally">
